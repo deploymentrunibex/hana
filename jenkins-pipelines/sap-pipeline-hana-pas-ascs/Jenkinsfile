@@ -9,8 +9,9 @@ pipeline {
     }
     environment {
         // Credentials for AWS
-        AWS_ACCOUNT_CREDENTIALS = credentials("AWS_ACCOUNT_CREDENTIALS")
         AWS_REGION = credentials("AWS_REGION")
+        AWS_ACCOUNT_CREDENTIALS_PSW = credentials("AWS_ACCOUNT_CREDENTIALS_PSW")
+        AWS_ACCOUNT_CREDENTIALS_USR = credentials("AWS_ACCOUNT_CREDENTIALS_USR")
        
         // Credentials for Ansible
         SSH_KEYPAIR_NAME = credentials("SSH_KEYPAIR_NAME")
